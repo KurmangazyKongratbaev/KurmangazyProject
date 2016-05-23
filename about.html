@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>Welcome</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
+      
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header class="header" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="navbar-header">
+                            <a type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="col-logo glyphicon glyphicon-th"></span>
+                            </a>
+                            <a class="navbar-brand logo" href="#top">BooKing.kz</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <nav class="collapse navbar-collapse" id="myNavbar" role="navigation">
+                        <ul class="nav navbar-nav navbar-right menu">
+                                <li><a href="services.php">Services</a></li>
+                                <li><a href="#contact">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+      
+	<!-- MAIN IMAGE SECTION -->
+	<div class="main-theme" style="background-image: url(resources/images/about.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-lg-offset-0">
+					<h1 style="text-shadow: 1px 1px 2px black, 0 0 10em #2c3e50;">About Author</h1>
+                    
+					<h3 style="color:white;text-shadow: 1px 1px 2px black, 0 30em 10em #2c3e50;">This project /full project/ made by Kongratbaev Kurmangazy from 01En04D group. This project took over 3 days to create and learn how to program Bootstrap. The funny thing is the owner of the project downloaded lots of videos about Bootstrap but did not watch them. He just sit and read what in bootstrap.css and compared changes with initial. And thus is product of those experience. Thanks for reading my mumbling but actually it is true all thing what i wrote.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <section id="contact"></section>
+  <div class="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 dg">
+          <h4 class="ml"><i class="glyphicon glyphicon-envelope" style="font-size:15px;"></i>&nbsp&nbsp&nbsp EMAIL</h4>
+                    <a href="pages/about.html"><p class="ml">> Subscribe for our latest offers</p></a>
+        </div>
+        <div class="col-lg-4 lg">
+          <h4 class="ml"><i class="glyphicon glyphicon-phone" style="font-size:15px;"></i>&nbsp&nbsp&nbsp LOTTA APP</h4>
+          <p class="ml">> Download app and book on the go</p>
+        </div>
+        <div class="col-lg-4 dg">
+          <h4 class="ml"><i class="glyphicon glyphicon-globe" style="font-size:15px;"></i>&nbsp&nbsp&nbsp LOTTA REWARDS</h4>
+                    <a href="pages/services.php"><p class="ml">> Book now and save up 40%</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+                    <p>
+            <a href="pages/services.php">Services</a><br/>
+                        <a href="pages/about.html">About us</a><br/>
+                        <a href="#">Admin panel</a><br/>
+          </p>
+          <p style="font-size:21px;">
+            Kaskelen city, Ablaykhan 1/1,<br/>
+            Kongratbaev Kurmangazy.
+          </p>
+          <p>
+            Phone: +7 702 631 34 71<br/>
+          </p>
+                    
+        </div>
+        <div class="col-lg-4">
+        </div>
+                <div class="col-lg-12">
+        <p class="centered">&copy;KURMANGAZY</p>
+      </div>
+      </div>
+    </div>
+  </div>
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="pages/resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/jquery.js"></script>
+    <script>
+    $(function() {
+        $('a[href=#contact]').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
+      
